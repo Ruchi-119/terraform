@@ -8,7 +8,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-    name     = "DevOpsLab_Ruddy"
+    name     = "newrg"
     location = "westus"
 }
 
