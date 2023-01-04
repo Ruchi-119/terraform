@@ -1,15 +1,9 @@
-variable "subscription_id" {
-  description = "The subscription ID of the Azure resources to be used."
+variable "resource_group_location" {
+  default     = "eastus"
+  description = "Location of the resource group."
 }
 
-variable "client_id" {
-  description = "The client ID of the Azure user to be used."
-}
-
-variable "client_secret" {
-  description = "The client secret or password of the Azure user to be used."
-}
-
-variable "tenant_id" {
-  description = "The tenant ID of the Azure resources to be used."
+variable "resource_group_name_prefix" {
+  default     = "rg"
+  description = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
 }
